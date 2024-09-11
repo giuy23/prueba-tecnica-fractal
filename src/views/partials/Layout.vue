@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import MenuBarIcon from "@/Icons/MenuBarIcon.vue" 
-import Sidebar from "@/views/partials/Sidebar.vue"
+import MenuBarIcon from "@/Icons/MenuBarIcon.vue";
+import Sidebar from "@/views/partials/Sidebar.vue";
 import { ref } from "vue";
 
 const isSidebarOpen = ref(false);
@@ -10,7 +10,7 @@ const openSiderbar = () => {
 </script>
 
 <template>
-  <div class="flex">
+  <div class="flex m-auto">
     <div
       :class="{
         hidden: !isSidebarOpen,
@@ -31,8 +31,8 @@ const openSiderbar = () => {
 
     <div class="flex-1 bg-blue-100 min-h-screen m-auto">
       <div class="lg:hidden p-4">
-        <button @click="openSiderbar" >
-          <MenuBarIcon/>
+        <button @click="openSiderbar">
+          <MenuBarIcon />
         </button>
       </div>
 

@@ -111,14 +111,14 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="bg-white rounded-full w-full mx-4 lg:w-3/5 relative mt-2 lg:mt-4">
+  <div class="bg-white rounded-full w-10/12 m-auto lg:w-3/5 relative lg:mt-4">
     <form
       action=""
       @submit.prevent="searchData"
-      class="flex flex-row justify-between p-4"
+      class="flex flex-row justify-between p-3"
     >
       <div class="flex flex-col">
-        <label for="country-search" class="text-2xl">País</label>
+        <label for="country-search" class="text-xl lg:text-2xl">País</label>
         <input
           id="country-search"
           type="text"
@@ -130,10 +130,10 @@ onUnmounted(() => {
         />
       </div>
       <div
-        class="bg-blue-400 rounded-full flex flex-row items-center px-4 text-white"
+        class="bg-blue-400 rounded-full flex flex-row items-center px-1 py-0 lg:px-4 m-0 text-white"
       >
-        <SeacrhIcon class="size-6" />
-        <button type="submit" class="text-2xl">Buscar</button>
+        <SeacrhIcon class="size-4 lg:size-6" />
+        <button type="submit" class="text-xl lg:text-2xl">Buscar</button>
       </div>
     </form>
 
