@@ -1,7 +1,6 @@
-<!-- src/views/partials/Layout.vue -->
 <script lang="ts" setup>
-import Sidebar from "./Sidebar.vue"
-import MenuBarIcon from "@/Icons/MenuBarIcon.vue"
+import MenuBarIcon from "@/Icons/MenuBarIcon.vue" 
+import Sidebar from "@/views/partials/Sidebar.vue"
 import { ref } from "vue";
 
 const isSidebarOpen = ref(false);
