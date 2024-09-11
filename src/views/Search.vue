@@ -117,12 +117,12 @@ onUnmounted(() => {
       @submit.prevent="searchData"
       class="flex flex-row justify-between p-3"
     >
-      <div class="flex flex-col">
+      <div class="flex flex-col w-32 lg:w-52">
         <label for="country-search" class="text-xl lg:text-2xl">País</label>
         <input
           id="country-search"
           type="text"
-          placeholder="Escribe el País que deseas conocer"
+          placeholder="Escribe el País que deseas ver"
           v-model="dataToSearch.country"
           @input="searchData"
           @click="isVisible = true"
