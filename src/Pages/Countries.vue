@@ -38,18 +38,18 @@ const countrySelected = computed(() => (code: string) => {
 </script>
 
 <template>
-  <div class="w-11/12 lg:w-10/12 pt-10">
+  <div class="w-11/12 lg:w-10/12 py-10">
     <p v-if="loading" class="text-center text-3xl text-white">Cargando...</p>
 
     <p v-else-if="error">Hubo un Problema con la Obtención de los Países</p>
 
     <div class="flex flex-col-reverse lg:flex-row">
-      <section class="w-full">
+      <section class="w-full justify-center">
         <ul
           :class="
             'grid gap-4 lg:gap-8 ' +
             (countriesWithImages.length > 3
-              ? ' grid-cols-[repeat(auto-fit,minmax(280px,1fr))]'
+              ? ' grid-cols-[repeat(auto-fill,minmax(280px,1fr))]'
               : 'grid-cols-[repeat(auto-fill,minmax(200px,1fr))]')
           "
           v-if="countriesWithImages.length > 0"
@@ -94,7 +94,7 @@ const countrySelected = computed(() => (code: string) => {
         </ul>
       </section>
       <section v-if="countryInfo" class="w-full lg:w-3/5 lg:px-3 pb-3">
-        <div class="bg-white p-3 lg:p-8 rounded-sm shadow-2xl relative">
+        <div class="bg-white p-3 lg:p-8 rounded-sm shadow-2xl min-h-screen sticky top-3">
           <div class="closeIcon" @click="countryInfo = null">
             <CloseIcon class="cursor-pointer" />
           </div>

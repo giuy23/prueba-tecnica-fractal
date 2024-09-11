@@ -30,7 +30,7 @@ const updateContries = (data: ICountry[]) => {
 
 <template>
   <Layout>
-    <div class="flex flex-col justify-center items-center w-full">
+    <div class="flex flex-col justify-center items-center w-11/12 lg:w-full m-auto">
       <Search @update="updateContries!" />
       <Countries :countries="countries" />
     </div>

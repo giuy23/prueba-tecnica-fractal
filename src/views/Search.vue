@@ -111,7 +111,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="bg-white rounded-full w-11/12 mx-4 lg:w-3/5 relative mt-2 lg:mt-4">
+  <div class="bg-white rounded-full w-full mx-4 lg:w-3/5 relative mt-2 lg:mt-4">
     <form
       action=""
       @submit.prevent="searchData"
@@ -138,7 +138,7 @@ onUnmounted(() => {
     </form>
 
     <section :class="isVisible ? 'block' : 'hidden'" ref="sectionModal">
-      <div class="absolute bg-white rounded-3xl w-full mt-2 shadow-lg">
+      <div class="absolute bg-white rounded-3xl w-full mt-2 shadow-lg z-10">
         <div class="flex flex-row justify-between py-2 px-4 font-semibold">
           <p>Filtrar por Continentes</p>
           <p class="text-blue-400" @click="handleClearSearchData">Limpiar</p>
